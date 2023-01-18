@@ -4,10 +4,10 @@ Notes created for preparation of EJPTv2
 
 ## Content
 
-- [Information Gathering and Enumeration](./Information Gathering and Enumeration/)
+- [Information Gathering and Enumeration](https://github.com/neilmadhava/EJPTv2-Notes/blob/main/Information%20Gathering%20and%20Enumeration/README.md)
 	- Passive
 	- Active
-	- [SMB](./Information Gathering and Enumeration/SMB.md)
+	- [SMB](https://github.com/neilmadhava/EJPTv2-Notes/blob/main/Information%20Gathering%20and%20Enumeration/SMB.md)
 	- FTP
 	- SSH
 	- HTTP
