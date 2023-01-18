@@ -5,15 +5,15 @@ Notes created for preparation of EJPTv2
 ## Content
 
 - [Information Gathering and Enumeration](./Information%20Gathering%20and%20Enumeration/)
-	- Passive
-	- Active
+	- [Passive](./Information%20Gathering%20and%20Enumeration/passive.md)
+	- [Active](./Information%20Gathering%20and%20Enumeration/active.md)
 	- [SMB](./Information%20Gathering%20and%20Enumeration/SMB.md)
-	- FTP
-	- SSH
-	- HTTP
-	- SQL
-	- SMTP
-	- Nessus
+	- [FTP](./Information%20Gathering%20and%20Enumeration/FTP.md)
+	- [SSH](./Information%20Gathering%20and%20Enumeration/SSH.md)
+	- [HTTP](./Information%20Gathering%20and%20Enumeration/HTTP.md)
+	- [SQL](./Information%20Gathering%20and%20Enumeration/SQL.md)
+	- [SMTP](./Information%20Gathering%20and%20Enumeration/SMTP.md)
+	- [Nessus](./Information%20Gathering%20and%20Enumeration/nessus.md)
 
 - Metasploit
 	- Information Enumeration Modules
