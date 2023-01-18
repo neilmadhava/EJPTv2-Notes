@@ -4,10 +4,10 @@ Notes created for preparation of EJPTv2
 
 ## Content
 
-- Information Gathering and Enumeration
+- [Information Gathering and Enumeration](./Information Gathering and Enumeration/)
 	- Passive
 	- Active
-	- SMB
+	- [SMB](./Information Gathering and Enumeration/SMB.md)
 	- FTP
 	- SSH
 	- HTTP

@@ -2,12 +2,11 @@
 - `fping -I <interface> -g <cidr_range> -a 2>/dev/null`
 - `arp-scan -I <interface> -g <cidr_range>`
 - https://catonmat.net/tcp-port-scanner-in-bash : bash tcp scan
-- 
-```bash
-    #!/bin/bash
-	for port in {1..1000}; do
-		timeout 1 bash -c "echo >/dev/tcp/$1/$port" 2>/dev/null && echo "port $port is open"
-	done
+- ```bash
+#!/bin/bash
+for port in {1..1000}; do
+	timeout 1 bash -c "echo >/dev/tcp/$1/$port" 2>/dev/null && echo "port $port is open"
+done
 ```		
 
 ## Nmap

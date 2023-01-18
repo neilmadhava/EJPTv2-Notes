@@ -60,7 +60,7 @@
 ## Nmblookup:
 
 - `nmblookup -A <ip>`
-  ![Alt](./images/nmblookup-01.png) 
+	![Alt](./images/nmblookup-01.png) 
 	￼
 
 ## SMBclient:
@@ -87,8 +87,8 @@
 - `enum4linux -U <ip>` : enum users (use -u <user> -p <pass> for auth enum)
 - `enum4linux -S <ip>` : enum shares
 - `enum4linux -G <ip>` : enum domain groups
-- `enum4linux -i <ip>` : get printer info
-  ![Alt](./images/enum4linux-01.png) 
+- `enum4linux -i <ip>` : get printer info'
+	![Alt](./images/enum4linux-01.png) 
 - `enum4linux -r -u "admin" -p "password" <ip>` : enum users via RID cycling. S-1-22-1-1003 etc.
 
 ## PSExec (Authenticated):
