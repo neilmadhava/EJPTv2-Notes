@@ -15,20 +15,20 @@ Notes created for preparation of EJPTv2
 	- [SMTP](./Information%20Gathering%20and%20Enumeration/SMTP.md)
 	- [Nessus](./Information%20Gathering%20and%20Enumeration/nessus.md)
 
-- Metasploit
-	- Information Enumeration Modules
-	- Vulnerability Scanning
+- [Metasploit](./Metasploit)
+	- [Information Enumeration Modules](./Metasploit/infoenum.md)
+	- [Vulnerability Scanning](./Metasploit/vulnscanning.md)
 
-- Host-Based Attacks (Windows)
-	- Webdav
-	- SMB
-	- RDP
-	- WinRM
-	- Privilege Escalation
-	- File System Vulnerabilities
-	- Credential Dumping
+- [Host-Based Attacks - Windows](./Host%20Based%20Attacks/)
+	- [Webdav](./Host%20Based%20Attacks/webdav-win.md)
+	- [SMB](./Host%20Based%20Attacks/SMB-win.md)
+	- [RDP](./Host%20Based%20Attacks/RDP-win.md)
+	- [WinRM](./Host%20Based%20Attacks/winrm-win.md)
+	- [Privilege Escalation](./Host%20Based%20Attacks/privesc-win.md)
+	- [File System Vulnerabilities](./Host%20Based%20Attacks/filesysvulns-win.md)
+	- [Credential Dumping](./Host%20Based%20Attacks/credsdump-win.md)
 
-- Host-Based Attacks (Linux)
+- [Host-Based Attacks - Linux](./Host%20Based%20Attacks/)
 	- HTTP
 	- FTP
 	- SAMBA
