@@ -6,9 +6,13 @@
 
 - run nmap script http-enum if port 80 is open : /webdav/ should exist
 - `davtest -url http://10.0.16.177/webdav`
-![davtest output 1](./images/webdav-01.png)
+  
+  ![davtest output 1](./images/webdav-01.png)
+
 - `davtest -auth <user>:<password> -url http://10.0.16.177/webdav` : should tell what file extensions could be uploaded like asp for sending potential payloads
-![davtest output 2](./images/webdav-02.png)
+  
+  ![davtest output 2](./images/webdav-02.png)
+  
 - /usr/share/webshells/asp/ - stores webshells
 - cadaver http://10.0.16.177/webdav
 	- enter legit creds

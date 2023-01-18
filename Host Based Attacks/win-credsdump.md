@@ -5,7 +5,9 @@
 	- `powershell -ep bypass` (PowerShell execution policy bypass)
 	- `. .\PowerUp.ps1`
 	- `Invoke-PrivescAudit` - it will find misconfig files/leftover files like Unattend.xml
+
 	![Invoke-PrivescAudit output](./images/credsdump-01.png)
+	
 	- Get password from the Unattend.xml file, decode base64.
 	- 
 	```

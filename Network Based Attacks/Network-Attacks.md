@@ -26,20 +26,24 @@
   `(wlan.fc.type_subtype == 0x0008) && (!(wlan.wfa.ie.wpa.version == 1)) && !(wlan.tag.number == 48)`
 - operating channel for an ssid
   `wlan contains Home_Network`
+
   ![cmd output](./images/netattacks-01.png)
 
 - security mechanism configured for an ssid
   `wlan contains LazyArtists`
+
   ![cmd output](./images/netattacks-02.png)
 
 - if WPS is enabled on an SSID
   `(wlan.ssid contains "Amazon") && (wlan.fc.type_subtype == 0x0008)`
+
   ![cmd output](./images/netattacks-03.png)
   
 - packets transmitted or received by a device with a mac address
   `(wlan.ta == e8:de:27:16:87:18) || (wlan.ra == e8:de:27:16:87:18)`
 - mac addr of station which exchanged packets with a given SSID
   `(wlan.bssid == e8:de:27:16:87:18) && (wlan.fc.type_subtype == 0x0020)`
+  
   ![cmd output](./images/netattacks-04.png)
     ￼
 	

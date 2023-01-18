@@ -4,13 +4,17 @@
 - nmap -sV -script banner 192.80.153.3
 - nc <ip> 25
 	- VRFY admin@openmailbox.xyz
+
 	![SMTP VRFY output 1](./images/smtp-01.png)
 	![SMTP VRFY output 2](./images/smtp-02.png)
 	  ￼
 - `telnet <ip> 25`
 	- `HELO attacker.xyz`
+
 	![SMTP HELO output](./images/smtp-03.png)
+
 	- `EHLO attacker.xyz`
+	
 	![SMTP EHLO output](./images/smtp-04.png)
 	  ￼
 - send fake mail using telnet:

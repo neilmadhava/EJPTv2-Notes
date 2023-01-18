@@ -3,6 +3,7 @@
 - auxiliary/analyze/crack_linux (uses creds in msf db "loot")
 	- set SHA512 true
 - post/linux/gather/hashdump
+
 ![crack_linux msf module output 1](./images/passcrack-01.png)
 ![crack_linux msf module output 2](./images/passcrack-02.png)
 

@@ -28,11 +28,13 @@
 # Impersonate
 
 ![meterpreter getuid](./images/privesc-01.png)
+
 ![meterpreter access denied to read file](./images/privesc-02.png)  ￼￼
 
 - load icognito
 - list_tokens -u : make note of available tokens (eg. delegation token)
 - impersonate_token <token_name>
+
 ![meterpreter access denied to read file](./images/privesc-03.png)  ￼￼	   ￼
 
 # PowerUp

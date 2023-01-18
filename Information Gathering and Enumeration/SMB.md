@@ -5,7 +5,9 @@
 ## Nmap enum scripts
 
 - `nmap -sU --top-ports 25 <ip>`
+
   ![SMB UDP ports](./images/nmap-01.png)
+
 - smb-protocols : list supported protocols
 	- if v1 is enabled - EternalBlue exploit?
 - smb-security-mode : guest account enabled?
@@ -13,7 +15,9 @@
 - smb-enum-sessions : enum logged in users
 - smb-enum-sessions --script-args smbusername=<user>,smbpassword=<pass>
 - smb-enum-users.nse : list all users that exist on samba version
+
   ![smb-enum-users.nse output](./images/nmap-02-enumusers.png)
+
 - smb-enum-shares : enum shares as guest
 - smb-enum-shares,smb-ls --script-args smbusername=<user>,smbpassword=<pass> : Enumerating all the shared folders and drives then running the ls command on all the shared folders.
 - smb-enum-shares --script-args smbusername=<user>,smbpassword=<pass>
@@ -30,16 +34,25 @@
 - Allows file upload/download/delete
 - Permission enumeration (writable share, meet Metasploit)
 - `smbmap -H <ip> -u guest -p "" -d <domain>` 
+
   ![smbmap output](./images/smbmap-01.png)
+
 - `smbmap -H <ip> -u guest -p "" -d .`
 - `smbmap -H <ip> -u <user> -p <pass> -x 'ipconfig'` : execute command on remote host
 - `smbmap -H <ip> -u <user> -p <pass> -L` : list all drives (C: or D:)
+
   ![smbmap list drives output](./images/smbmap-02.png)  ￼ 
+
 - `smbmap -H <ip> -u <user> -p <pass> -r 'C$'` : list contents of C:\
+
   ![smbmap list contents of drive](./images/smbmap-03.png) 
+
 - `smbmap -H <ip> -u <user> -p <pass> --upload '/root/backdoor' 'C$\backdoor'`
+  
   ![smbmap upload backdoor output](./images/smbmap-04.png) 
+
 - `smbmap -H <ip> -u <user> -p <pass> --download 'C$\flag.txt'`
+
   ![smbmap download flag output](./images/smbmap-05.png) 
 
 # Metasploit Modules
@@ -60,6 +73,7 @@
 # Nmblookup
 
 - `nmblookup -A <ip>`
+
 	![nmblookup output](./images/nmblookup-01.png) 
 	￼
 
@@ -88,7 +102,9 @@
 - `enum4linux -S <ip>` : enum shares
 - `enum4linux -G <ip>` : enum domain groups
 - `enum4linux -i <ip>` : get printer info'
+
 	![enum4linux printer output](./images/enum4linux-01.png) 
+	
 - `enum4linux -r -u "admin" -p "password" <ip>` : enum users via RID cycling. S-1-22-1-1003 etc.
 
 # PSExec (Authenticated)

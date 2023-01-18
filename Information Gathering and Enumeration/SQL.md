@@ -22,7 +22,9 @@
 - ms-sql-info
 - ms-sql-ntlm-info --script-args mssql.instance-port=1433
 - ms-sql-brute --script-args userdb=<userlist>,passdb=<passlist>
+
 ![nmap ms-sql-brute output](./images/sql-01.png)
+
 - ms-sql-empty-password
 - ms-sql-query --script-args mssql.username=admin,mssql.password=anamaria,ms-sql-query.query="SELECT * FROM master..syslogins" 
 - ms-sql-dump-hashes --script-args mssql.username=admin,mssql.password=anamaria
@@ -32,18 +34,24 @@
 # Metasploit Modules
 
 - auxiliary/scanner/mysql/mysql_schemadump : Dump the schema of all databases from the server  ￼
+
 ![metasploit mysql_schemadump output](./images/sql-02.png)
+
 - auxiliary/scanner/mysql/mysql_writable_dirs : writable dirs
 - auxiliary/scanner/mysql/mysql_file_enum : readable files
 - auxiliary/scanner/mysql/mysql_hashdump : database users hashdump
+
 ![metasploit mysql_hashdump output](./images/sql-03.png)
+
 - auxiliary/scanner/mysql/mysql_login
 - auxiliary/scanner/mssql/mssql_login
 - auxiliary/admin/mssql/mssql_enum
 - auxiliary/admin/mssql/mssql_enum_sql_logins : user enum
 - auxiliary/admin/mssql/mssql_exec : execute a cmd is xp_cmdshell enabled
 - auxiliary/admin/mssql/mssql_enum_domain_accounts : mps the information such as Windows domain users, groups, and computer accounts
-![metasploit mysql_enum_domain_accounts output](./images/sql-04.png)
+  
+  ![metasploit mysql_enum_domain_accounts output](./images/sql-04.png)
+  
 - auxiliary/admin/mysql/mysql_sql - needs creds to run sql queries.
 - wordlists: 
 	- usr/share/metasploit-framework/data/wordlists/directory.txt

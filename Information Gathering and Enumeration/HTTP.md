@@ -16,7 +16,9 @@
 - http-enum : discover interesting dirs like webdav - check Host-based attacks > Windows > webdav
 - http-headers : server header info
 - http-methods --script-args http-methods.url-path=/webdav/ : allowed methods
+
 ![nmap http-methods scan](./images/http-01.png)
+
 - http-webdav-scan --script-args http-methods.url-path=/webdav/ : Running webdav scan Nmap script to identify WebDAV installations the script uses the OPTIONS and PROPFIND methods to detect it.
 - banner
 - http-shellshock --script-args “http-shellshock.uri=/gettime.cgi"

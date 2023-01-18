@@ -2,24 +2,32 @@
 
 - https://github.com/mzet-/linux-exploit-suggester
 - upload les.sh to target using meterpreter and run the file
-![les.sh output](./images/privesc-04.png)
+
+  ![les.sh output](./images/privesc-04.png)
+
 - eg. dirtycow 2 exploit creates a new user with escalated perms with a password. 
 - compile on attacker machine or victim machine (former may not work).
 
 # Cron jobs:
 
 - look for a script file (.sh) which normal user can edit and can run as root.
-![list permissions for a file](./images/privesc-05.png)
+
+  ![list permissions for a file](./images/privesc-05.png)
+
 - `printf '#! /bin/bash\necho "student ALL=NOPASSWD:ALL" >> /etc/sudoers' > /usr/local/share/copy.sh`
 - this will create a script which will allow student user to run sudo without password
 
 # Exploiting setuid programs:
 
 - setuid bit looks like:
-![setuid investigation](./images/privesc-06.png)
+
+  ![setuid investigation](./images/privesc-06.png)
+
 - this means this binary along with all child processes run with root privs
 - investigate binary with - strings ./welcome
-![strings investigation of binary](./images/privesc-07.png)
+  
+  ![strings investigation of binary](./images/privesc-07.png)
+  
 - since this binary is calling greetings binary, we delete the ./greetings binary
 - and replace with /bin/bash binary
 - this will run /bin/bash as root

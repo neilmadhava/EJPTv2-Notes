@@ -4,6 +4,7 @@
 - exploit/windows/smb/psexec (can be used to pass NTLM hashes as password)
 	- use login creds from step before
 	- can work with ntlm hashes too (use lt:ntlm hash as smbpass - set target command / native upload)
+	
 	![psexec output](./images/smb-01.png)
 
 # EternalBlue:
