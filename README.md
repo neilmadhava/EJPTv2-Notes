@@ -20,13 +20,13 @@ Notes created for preparation of EJPTv2
 	- [Vulnerability Scanning](./Metasploit/vulnscanning.md)
 
 - [Host-Based Attacks - Windows](./Host%20Based%20Attacks/)
-	- [Webdav](./Host%20Based%20Attacks/webdav-win.md)
-	- [SMB](./Host%20Based%20Attacks/SMB-win.md)
-	- [RDP](./Host%20Based%20Attacks/RDP-win.md)
-	- [WinRM](./Host%20Based%20Attacks/winrm-win.md)
-	- [Privilege Escalation](./Host%20Based%20Attacks/privesc-win.md)
-	- [File System Vulnerabilities](./Host%20Based%20Attacks/filesysvulns-win.md)
-	- [Credential Dumping](./Host%20Based%20Attacks/credsdump-win.md)
+	- [Webdav](./Host%20Based%20Attacks/win-webdav.md)
+	- [SMB](./Host%20Based%20Attacks/win-SMB.md)
+	- [RDP](./Host%20Based%20Attacks/win-RDP.md)
+	- [WinRM](./Host%20Based%20Attacks/win-winrm.md)
+	- [Privilege Escalation](./Host%20Based%20Attacks/win-privesc.md)
+	- [File System Vulnerabilities](./Host%20Based%20Attacks/win-filesysvulns.md)
+	- [Credential Dumping](./Host%20Based%20Attacks/win-credsdump.md)
 
 - [Host-Based Attacks - Linux](./Host%20Based%20Attacks/)
 	- HTTP
