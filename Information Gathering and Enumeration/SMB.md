@@ -5,7 +5,7 @@
 ### Nmap enum scripts
 
 - `nmap -sU --top-ports 25 <ip>`
-- ![Alt](./images/nmap-01.png)
+  ![Alt](./images/nmap-01.png)
 - smb-protocols : list supported protocols
 	- if v1 is enabled - EternalBlue exploit?
 - smb-security-mode : guest account enabled?
@@ -13,7 +13,7 @@
 - smb-enum-sessions : enum logged in users
 - smb-enum-sessions --script-args smbusername=<user>,smbpassword=<pass>
 - smb-enum-users.nse : list all users that exist on samba version
-- ![Alt](./images/nmap-02-enumusers.png)
+  ![Alt](./images/nmap-02-enumusers.png)
 - smb-enum-shares : enum shares as guest
 - smb-enum-shares,smb-ls --script-args smbusername=<user>,smbpassword=<pass> : Enumerating all the shared folders and drives then running the ls command on all the shared folders.
 - smb-enum-shares --script-args smbusername=<user>,smbpassword=<pass>
@@ -30,17 +30,17 @@
 - Allows file upload/download/delete
 - Permission enumeration (writable share, meet Metasploit)
 - `smbmap -H <ip> -u guest -p "" -d <domain>` 
-- ![Alt](./images/smbmap-01.png)
+  ![Alt](./images/smbmap-01.png)
 - `smbmap -H <ip> -u guest -p "" -d .`
 - `smbmap -H <ip> -u <user> -p <pass> -x 'ipconfig'` : execute command on remote host
 - `smbmap -H <ip> -u <user> -p <pass> -L` : list all drives (C: or D:)
-- ![Alt](./images/smbmap-02.png)  ￼ 
+  ![Alt](./images/smbmap-02.png)  ￼ 
 - `smbmap -H <ip> -u <user> -p <pass> -r 'C$'` : list contents of C:\
-- ![Alt](./images/smbmap-03.png) 
+  ![Alt](./images/smbmap-03.png) 
 - `smbmap -H <ip> -u <user> -p <pass> --upload '/root/backdoor' 'C$\backdoor'`
-- ![Alt](./images/smbmap-04.png) 
+  ![Alt](./images/smbmap-04.png) 
 - `smbmap -H <ip> -u <user> -p <pass> --download 'C$\flag.txt'`
-- ![Alt](./images/smbmap-05.png) 
+  ![Alt](./images/smbmap-05.png) 
 
 ## MSF:
 
@@ -60,7 +60,7 @@
 ## Nmblookup:
 
 - `nmblookup -A <ip>`
-- ![Alt](./images/nmblookup-01.png) 
+  ![Alt](./images/nmblookup-01.png) 
 	￼
 
 ## SMBclient:
@@ -68,9 +68,9 @@
 - `smbclient -L <ip> -N` : list sharenames and domains with no pass with anonymous connection.
 - `smbclient -L <ip> -U <user>` : authenticate as a user with legit creds
 - `smbclient //<ip>/public -N`
-- `smbclient //<ip>/public -U <user> 
-		smb> ls
-		smb> get flag`
+- `smbclient //<ip>/public -U <user>` 
+	- smb> ls
+	- smb> get flag
 
 ## RPCclient:
 
@@ -88,7 +88,7 @@
 - `enum4linux -S <ip>` : enum shares
 - `enum4linux -G <ip>` : enum domain groups
 - `enum4linux -i <ip>` : get printer info
-- ![Alt](./images/enum4linux-01.png) 
+  ![Alt](./images/enum4linux-01.png) 
 - `enum4linux -r -u "admin" -p "password" <ip>` : enum users via RID cycling. S-1-22-1-1003 etc.
 
 ## PSExec (Authenticated):
