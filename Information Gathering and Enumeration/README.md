@@ -1,4 +1,5 @@
 # Mapping Network
+
 - `fping -I <interface> -g <cidr_range> -a 2>/dev/null`
 - `arp-scan -I <interface> -g <cidr_range>`
 - https://catonmat.net/tcp-port-scanner-in-bash : bash tcp scan
