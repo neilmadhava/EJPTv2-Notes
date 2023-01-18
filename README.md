@@ -29,11 +29,12 @@ Notes created for preparation of EJPTv2
 	- [Credential Dumping](./Host%20Based%20Attacks/win-credsdump.md)
 
 - [Host-Based Attacks - Linux](./Host%20Based%20Attacks/)
-	- HTTP
-	- FTP
-	- SAMBA
-	- Privilege Escalation
-	- Password Cracking
+	- [HTTP](./Host%20Based%20Attacks/lin-HTTP.md)
+	- [FTP](./Host%20Based%20Attacks/lin-FTP.md)
+	- [SSH](./Host%20Based%20Attacks/lin-SSH.md)
+	- [SAMBA](./Host%20Based%20Attacks/lin-SAMBA.md)
+	- [Privilege Escalation](./Host%20Based%20Attacks/lin-privesc.md)
+	- [Password Cracking](./Host%20Based%20Attacks/lin-passcrack.md)
 
 - Network-Based Attacks
 
